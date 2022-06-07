@@ -87,10 +87,17 @@ img {
     color: var(--header-logo-font-color);
 }
 
+.logo-text:focus {
+outline-color: transparent;
+}
+
 .footer-logo-text {
     color: var(--main-light);
 }
 
+.footer-logo-text:focus {
+    outline-color: transparent;
+}
 
 /*оформлення header */
 header {
@@ -125,6 +132,7 @@ header {
 
 .nav-link:focus {
     color: var(--accent-color);
+    outline-color: transparent;
 }
 
 .contact-link {
@@ -137,6 +145,7 @@ header {
 
 .contact-link:focus {
     color: var(--accent-color);
+    outline-color: transparent;
 }
 
                               /*вирівнювання елементів у header*/
@@ -323,6 +332,7 @@ header {
 
 .team-item {
     flex-basis: calc(100%/4-30px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -376,7 +386,7 @@ header {
 }
 
 .post-address {
-    display: block;
+    display: inline-block;
     color: var(--main-light);
     line-height: 1.5;                          /*змінено з 1.71 на 1.5*/
 }
@@ -387,6 +397,7 @@ header {
 
 .post-address:focus {
     color: var(--accent-color);
+    outline-color: transparent;
 }
 
 .footer-contacts-text {
@@ -400,6 +411,7 @@ header {
 
 .footer-contacts-text:focus {
     color: var(--accent-color);
+    outline-color: transparent;
 }
 
 
@@ -428,9 +440,10 @@ header {
     font-size: 16px;
     line-height: 1.62;
     padding: 6px 22px;
-    border: none;
+    border: transparent;
     border-radius: 4px;
     font-family: inherit;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .filter-button:hover {
@@ -441,12 +454,15 @@ header {
 .filter-button:focus {
     background-color: var(--accent-color);
     color: var(--main-light);
+    outline-color: transparent;
 }
 
 .active {
     background-color: var(--accent-color);
     color: var(--main-light);
 }
+
+
 
 .current {
     display: block;
@@ -459,6 +475,9 @@ header {
     letter-spacing: 0.02em;
 }
 
+.current:focus {
+    outline-color: transparent;
+}
 
 /*оформлення головної секції сторінки Portfolio*/
 
@@ -467,7 +486,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-   /* margin-left: -30px;  */
+    cursor: pointer;
+
 }
 /*АЛЬТЕРНАТИВНИЙ ВАРІАНТ оформлення сітки карток портфоліо (складніший):
 
@@ -483,6 +503,37 @@ header {
     margin-bottom: 30px;
     }
 +прибрати відступи у нижнього ряду карток
+*/
+
+.portfolio-item-link {
+    display:block;
+    color: inherit;
+}
+
+.portfolio-item-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-item-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*
+.portfolio-item:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 */
 
 .portfolio-border {
