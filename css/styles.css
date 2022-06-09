@@ -180,11 +180,24 @@ header {
     margin-left: 50px;
 }
 
-/*
-.main-menu {
-    display: flex;
-    align-items: center;
-}*/
+.contact-icon {
+    margin-right: 10px;
+
+    width: 16px; 
+    height: 12px;
+
+    fill: currentColor;
+
+    
+}
+
+.contact-icon:hover {
+    fill:currentColor;
+}
+
+.contact-icon:focus {
+    fill: currentColor;
+}
 
 
 /*оформлення заголовків до секцій*/
