@@ -381,8 +381,9 @@ header {
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     
     background-color: #fff;
-    border: 1px solid var(--main-light);
     border-radius: 0px 0px 4px 4px;
+
+    /*border: 1px solid var(--main-light);*/
 }
 
 .team-border {
@@ -710,6 +711,7 @@ background-color: var(--main-light);
     padding-right: 24px;
     padding-left: 24px;
     border: 1px solid var(--portfolio-item-border-color);
+    border-top: none;
 }
 
 .portfolio-title {
