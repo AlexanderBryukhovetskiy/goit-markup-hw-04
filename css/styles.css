@@ -611,7 +611,7 @@ background-color: var(--main-light);
 .filter-button-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;    
+    margin-bottom: 50px;    
 }
 
 .button-list-item + .button-list-item {
